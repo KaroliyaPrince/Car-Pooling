@@ -13,7 +13,7 @@ var Resize = function () {
         document.getElementsByClassName("Navbar")[0].innerHTML = temp
 
         temp = `        
-                <div class="col"><a href="./Home.html">Home</a></div>
+                <div class="col"><a href="./index.html">Home</a></div>
                 <div class="col-12" id="search_ride"><a href="./Search_ride.html">Search Ride</a></div>
                 <div class="col-12" id="Publish_ride"><a href="./Publish_ride.html">Publish Ride</a></div>
                 <div class="col-12"><a href="./Profile.html">Profile</a></div>
@@ -45,7 +45,7 @@ var Resize = function () {
         temp = `
                         <div class="container">
                             <div class="row">
-                                <div class="col"><a href="./Home.html">Home</a></div>
+                                <div class="col"><a href="./index.html">Home</a></div>
                                 <div class="col" id="search_ride"><a href="./Search_ride.html">Search Ride</a></div>
                                 <div class="col" id="Publish_ride"><a href="./Publish_ride.html">Publish Ride</a></div>
                                 <div class="col"><a href="./Profile.html">Profile</a></div>
