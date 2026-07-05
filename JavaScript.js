@@ -143,7 +143,7 @@ let Footer = function () {
                     <div class="col-3">
                         <div class="links">
                             <div>Quick links</div>
-                            <div><a href="./Home.html">Home</a></div>
+                            <div><a href="./index.html">Home</a></div>
                             <div><a href="./Search_ride.html">Search</a></div>
                             <div><a href="./Publish_ride.html">Publish</a></div>
                             <div><a href="./Profile.html">Profile</a></div>
