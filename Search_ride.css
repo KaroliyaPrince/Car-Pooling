@@ -1,0 +1,284 @@
+.contant {
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    height: auto;
+    text-align: center;
+}
+
+.heading div:nth-child(1) {
+    font-size: 70px;
+    background: linear-gradient(45deg, #fff, #4ade80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heading div:nth-child(2),.heading div:nth-child(3) {
+    color: white;
+}
+
+.arrow {
+    font-size: 50px;
+    text-align: center;
+    height: auto;
+    position: relative;
+    top: 20px;
+    animation: up_down 2s ease infinite;
+}
+
+@keyframes up_down {
+
+    0%,
+    100% {
+        top: 70px;
+    }
+
+    25% {
+        top: 50px;
+    }
+
+    50% {
+        top: 70px;
+    }
+
+    75% {
+        top: 50px;
+    }
+}
+
+.search {
+    height: auto;
+    width: 60%;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.search::after{
+    content: "";
+    inset: -8px;
+    position: absolute;
+    background: conic-gradient(from var(--angle) ,transparent 50%, #4ade80, #22d3ee);
+    z-index: -1;
+    border-radius: 10px;
+    animation: Border 5s ease-in-out infinite;
+    /* filter: blur(2px); */
+
+} 
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes Border {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+
+form .row div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#Record label {
+    text-align: start;
+    font-size: 20px;
+}
+
+#Search_ride_form{
+    background: linear-gradient(45deg, #4ade80, #22d3ee);
+    border-radius: 10px;
+    
+}
+#Publish_ride_form{
+    border-radius: 10px;
+}
+#Publish_ride_form a , #Search_ride_form a{
+    text-decoration: none;
+    color: black;
+}
+#title {
+    font-size: 30px;
+}
+
+input,select {
+    border-radius: 5px;
+    border: 1px rgb(100, 100, 100) solid;
+    height: 40px;
+}
+
+.search .container {
+    width: 90%;
+}
+
+#Record button {
+    width: 80px;
+    border-radius: 10px;
+    height: 40px;
+
+}
+.Available_ride{
+    background-color: white;
+    height: 80%;
+    width: 60%;
+    z-index: 3;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    border-radius: 10px;
+    overflow-X: hidden;
+}
+.close{
+    font-size: 25px;
+    width: 40px;
+    position: relative;
+    left: 95%;
+    top: 1%;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px black solid;
+    height: auto;
+}
+.ride_details{
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    background: linear-gradient(45deg, #fff, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+button{
+    background: linear-gradient(135deg, #22d3ee 0%, #4ade80 100%);
+    border: 0;
+}
+button:hover{
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #4ade80, #22d3ee);
+}
+@media screen and (max-width: 500px) {
+    .logo div {
+        font-size: 20px;
+    }
+
+    #heading {
+        font-size: 20px;
+        position: relative;
+        text-align: start;
+        left: 10px;
+        top: 18px;
+
+    }
+
+    .heading div:nth-child(1) {
+        font-size: 30px;
+    }
+
+    .heading div:nth-child(2) {
+        font-size: 15px;
+    }
+
+    .search {
+        width: 90%;
+        height: auto;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+    .Available_ride{
+        width: 90%;
+        left: 5%;
+        top: 40%;
+    }
+    .close{
+        left: 85%;
+    }
+
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+    .heading div:nth-child(1) {
+        font-size: 40px;
+    }
+
+    .heading div:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .search {
+        width: 80%;
+    }
+    .Available_ride{
+        width: 80%;
+        position: absolute;
+        left: 10%;
+    }
+    .close{
+        right: 4%;
+        left: 93%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+    .heading div:nth-child(1) {
+        font-size: 35px;
+    }
+
+    .heading div:nth-child(2) {
+        font-size: 15px;
+    }
+
+    .search {
+        width: 90%;
+        height: auto;
+    }
+
+    #heading {
+        font-size: 20px;
+        position: relative;
+        text-align: start;
+        left: 10px;
+
+        text-align: center;
+        font-size: 30px;
+
+    }
+    .Available_ride{
+        width: 90%;
+        left: 5%;
+        top: 35%;
+    }
+    .close{
+        left: 90%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px){
+    .Available_ride{
+        width: 80%;
+        left: 10%;
+    }
+}

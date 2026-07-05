@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./Publish_ride.css">
+    <link rel="stylesheet" href="./Home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="Navbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><a href="./Home.html">Home</a></div>
+                        <div class="col" id="search_ride"><a href="./Search_ride.html">Search Ride</a></div>
+                        <div class="col" id="Publish_ride"><a href="./Publish_ride.html">Publish Ride</a></div>
+                        <div class="col"><a href="./Profile.html">Profile</a></div>
+                        <div class="col"><a href="./Contact_us.html">Contact Us</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tog_bar"></div>
+
+    <div class="contant">
+        <div class="heading">
+            <div>Publish Ride</div>
+        </div>
+
+        <div class="arrow"><i class="bi bi-chevron-down"></i></div>
+
+        <div class="search">
+            <div class="container">
+                <div class="row" id="title">
+                    <div class="col-6" id="Search_ride_form"><a href="./Search_ride.html"><label for="">Search Ride</label></a></div>
+                    <div class="col-6" id="Publish_ride_form"><a href="./Publish_ride.html"><label for="">Publish Ride</label></a></div>
+                </div>
+                <form action="">
+                    <div class="row" id="Record">
+                        <div class="col-md-6">
+                            <label for="">From</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">To</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Date</label>
+                            <input type="date">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Time</label>
+                            <input type="time">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Available Seats</label>
+                            <input type="number">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Price per Seat (₹)</label>
+                            <input type="number">
+                        </div>
+                        <div class="col-12">
+                            <label for="">Car Details</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-12">
+                            <label for="">Additional Information</label>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <div class="col-1"><button type="button" onclick=''>Search</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-3">
+                    <div class="links">
+                        <div>Quick links</div>
+                        <div><a href="./Home.html">Home</a></div>
+                        <div><a href="./Search_ride.html">Search</a></div>
+                        <div><a href="./Publish_ride.html">Publish</a></div>
+                        <div><a href="./Profile.html"></a>Profile</div>
+                        <div><a href="./Contact_us.html"></a>Contact us</div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="services">
+                        <div>Services</div>
+                        <div>Car Sharing</div>
+                        <div>Bike Sharing</div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="support">
+                        <div>Support</div>
+                        <div>Contact Us</div>
+                        <div>Help center</div>
+                        <div>Safety</div>
+                        <div>Terms & conditions</div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="connect">
+                        <div>Connect</div>
+                        <div class="connect_logos">
+                            <div><a href=""><i class="bi bi-facebook"></i></a></div>
+                            <div><a href=""><i class="bi bi-twitter"></i></a></div>
+                            <div><a href=""><i class="bi bi-instagram"></i></a></div>
+                            <div><a href=""><i class="bi bi-linkedin"></i></a></div>
+                        </div>
+                        <div><i class="bi bi-telephone"></i> +91 9726597450</div>
+                        <div><i class="bi bi-envelope"></i> ShareRide179@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col"><hr></div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">&copy; 2025 Share Ride. All rights reserved</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./JavaScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
